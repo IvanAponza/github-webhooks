@@ -1,0 +1,37 @@
+{
+  "name": "009-github-webhooks",
+  "version": "1.0.0",
+  "description": "Prueba Github Webhooks",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanAponza/github-webhooks.git"
+  },
+  "keywords": [
+    "Github",
+    "Webhooks",
+    "Nodejs"
+  ],
+  "author": "Ivan Aponza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IvanAponza/github-webhooks/issues"
+  },
+  "homepage": "https://github.com/IvanAponza/github-webhooks#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.14",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "env-var": "^7.5.0",
+    "express": "^5.1.0"
+  }
+}
